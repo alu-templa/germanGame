@@ -49,7 +49,7 @@ public class Gui extends JFrame implements ActionListener {
 //        width = dimension.width / 2;
 //        height = dimension.height / 2;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(969, 666);
+        this.setSize(969, 500);
 
         b1 = new JButton("Eine Frage?");
         b1.addActionListener(this);
@@ -91,6 +91,10 @@ public class Gui extends JFrame implements ActionListener {
         textArea.setEditable(false);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
+
+        Font font = textArea.getFont();
+        float size = font.getSize() + 2.0f;
+        textArea.setFont( font.deriveFont(size) );
     }
 
     public void viewGui() {
@@ -133,7 +137,7 @@ public class Gui extends JFrame implements ActionListener {
     }
 
     private void printLeaderboard(ArrayList<Student> studentArrayList, Round round){
-        textAreaLeaderboard.setText("Current Round: " + round.getRound() + "\n");
+        textAreaLeaderboard.setText("Current Round: " + round.getRound() + "\n\n");
         for(Student s : studentArrayList){
             textAreaLeaderboard.append(s.getName() + " " + s.getScore() + "\n");
         }
