@@ -49,7 +49,7 @@ public class Gui extends JFrame implements ActionListener {
 //        width = dimension.width / 2;
 //        height = dimension.height / 2;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(969, 800);
+        this.setSize(969, 666);
 
         b1 = new JButton("Eine Frage?");
         b1.addActionListener(this);
@@ -62,11 +62,6 @@ public class Gui extends JFrame implements ActionListener {
         b3 = new JButton("Nein, Nicht So Gut");
         b3.addActionListener(this);
         b3.setActionCommand("b3");
-
-//        textFieldStudent = new JTextField("");
-//        textFieldStudent.setColumns(20);
-//        textFieldQuestion = new JTextField("");
-//        textFieldQuestion.setColumns(20);
 
         panel.add(scrollPaneStudent);
         panel.add(scrollPaneQuestion);
