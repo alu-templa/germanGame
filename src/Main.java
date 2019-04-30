@@ -31,7 +31,7 @@ public class Main {
             File questionFile = new File("questions.txt");
             input = new Scanner(questionFile);
             while(input.hasNextLine()){
-                String questionToAdd = input.nextLine();
+                String questionToAdd = input.nextLine();//.replaceAll("");
                 Question question = new Question(questionToAdd, 1);
                 questionArrayList.add(question);
             }

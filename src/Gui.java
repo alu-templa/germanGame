@@ -49,7 +49,7 @@ public class Gui extends JFrame implements ActionListener {
 //        width = dimension.width / 2;
 //        height = dimension.height / 2;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(969, 500);
+        this.setSize(1000, 500);
 
         b1 = new JButton("Eine Frage?");
         b1.addActionListener(this);
@@ -93,7 +93,7 @@ public class Gui extends JFrame implements ActionListener {
         textArea.setWrapStyleWord(true);
 
         Font font = textArea.getFont();
-        float size = font.getSize() + 2.0f;
+        float size = font.getSize() + 3.0f;
         textArea.setFont( font.deriveFont(size) );
     }
 
